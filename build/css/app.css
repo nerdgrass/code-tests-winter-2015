@@ -5120,4 +5120,7 @@ blockquote p {
 .float-none {
   float: none; }
 
+p {
+  margin-bottom: 0; }
+
 /*# sourceMappingURL=app.css.map */

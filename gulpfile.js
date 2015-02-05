@@ -21,9 +21,9 @@ gulp.task('copy', function () {
 
 gulp.task('sass', function () {
   return  gulp.src(['./client/scss/**/*.{scss,sass}'])
-              .pipe(sass({ loadPath : ['bower_components', 'node_modules'],}))
-               .on('error', function (err) { console.log(err.message); })
-              .pipe(gulp.dest('./build/css'));
+            .pipe(sass({ loadPath : ['bower_components', 'node_modules'],}))
+             .on('error', function (err) { console.log(err.message); })
+            .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task('server', function (callback) {

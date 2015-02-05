@@ -14,3 +14,8 @@ Second thought: Find existing component-based solution
 Third thought: React can't be *that* hard, right?
 
 So, Foundation by ZURB has accordions. Huzzah! And [react-foundation-apps](https://github.com/akiran/react-foundation-apps) has an accordion in the docs. Double huzzah! So first things first, install the framework via npm.
+
+Look at docs. Wow, there's even a yeoman generator. Run it. This is entirely too good to be true - everything worked, and it appears I'm running Foundation for Apps powered by react instead of Angular.
+
+Okay, so boilerplate up and running. Time to see if I can get the accordion component working. Required it, added markup... lgtm!
+

@@ -53,7 +53,6 @@
     "commit": "ff33e2da2e0413d4ec9d5fade525c840094e0444"
   },
   "_source": "git://github.com/zurb/foundation-apps.git",
-  "_target": "~1.0.2",
-  "_originalSource": "foundation-apps",
-  "_direct": true
+  "_target": "1.*",
+  "_originalSource": "foundation-apps"
 }

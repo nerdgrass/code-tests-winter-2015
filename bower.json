@@ -1,0 +1,14 @@
+{
+  "name": "code-tests-winter-2015",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-apps": "1.*"
+  }
+}

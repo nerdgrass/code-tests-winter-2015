@@ -10,7 +10,7 @@ var App = React.createClass({
       <div className="grid-frame vertical">
         <div className="grid-content shrink" style={{padding: 0}}>
           <ul className="primary condense menu-bar">
-            <li><a><strong>React Foundation Apps</strong></a></li>
+            <li><a><strong>Accordion Generator</strong></a></li>
             <li><Link to="home">Home</Link></li>
             <li><Link to="about">About</Link></li>
           </ul>

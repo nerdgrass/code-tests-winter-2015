@@ -4,13 +4,18 @@ var Accordion = require('react-foundation-apps/lib/accordion');
 // Widget - all components put together
 var AccordionWidget = React.createClass({
   getInitialState: function() {
-    return {count: 4}
+    return {count: 1}
+  },
+  updateCount: function(count) {
+    this.setState({
+      count: count
+    });
   },
   render: function() {
     return (
       <div className="grid-block align-center">
         <div className="medium-8 grid-block">
-          <AccordionControl  />
+          <AccordionControl count={this.state.count} buttonClick={this.updateCount}   />
           <AccordionGrid count={this.state.count} className="small-12 grid-block" />
         </div>
       </div>
@@ -20,6 +25,13 @@ var AccordionWidget = React.createClass({
 
 // Controls - manipulate # of accordions
 var AccordionControl = React.createClass({
+  handleSubmit: function () {
+    console.log(this.props.count);
+    this.props.buttonClick(
+      this.props.count = this.props.count+1
+    );
+
+  },
   render: function() {
     return(
       <div className="small-12 grid-content">
@@ -27,9 +39,12 @@ var AccordionControl = React.createClass({
           <div className="card-section accordion-control grid-block">
               <div className="grid-content medium-8">
                 <h3>Accordion Control</h3>
+                <label>{this.props.count} accordions exist </label>
               </div>
               <div className="grid-content small-4">
-                <button className="button secondary">Add Accordion</button>
+                <form onSubmit={this.handleSubmit}>
+                  <button className="button secondary">Add Accordion</button>
+                </form>
               </div>
           </div>
         </div>

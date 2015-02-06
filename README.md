@@ -50,7 +50,11 @@ Having issues rendering the right amount of accordions. Right now, I have a for 
 
 Now JSX doesn't seem to like that I'm using a for loop. Jeez. So picky, JSX. Found solution on [Forrst](http://zurb.com/forrst/posts/Dynamically_loop_through_array_in_React_renderCo-GoL), now rendering accordions based on state.
 
-Now, to change that state on the button press.
+Now, to change that state on the button press. First, I'll add an onSubmit function called handleSubmit to the component. For now it just logs that it works. And it does! Huzzah! Looks like I need to update my AccordionWidget to have a way to update the state, call that updateCount. Now to tie the two together.
+
+Easier said than done. My updateCount method seems to perpetually be undefined. Whoops, syntax error after half an hour of trying different things. I might be tired, probably time to call it a night soon.
+
+AHA GOT IT. After some thorough console.logging, I realized that I just needed to add the count as a prop, then update that count when handling the submit. Makes sense, in retrospect. So it works! FINAL HUZZAH!
 
 
 

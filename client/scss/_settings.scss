@@ -87,8 +87,8 @@ $include-css: (
 // $font-weight-bold: bold;
 
 // We use these to control various global styles
-// $body-background: #fff;
-// $body-font-color: #222;
+$body-background: #fff8e8;
+$body-font-color: #244545;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -107,7 +107,7 @@ $include-css: (
 // $gray-light: lighten($gray, 8);
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 4px;
+$global-radius: 4px;
 // $global-rounded: 1000px;
 
 // We use this for default spacing
@@ -240,10 +240,10 @@ $include-css: (
 // 6. Accordion
 // - - - - - - - - - - - - - - - - - - - -
 
-// $accordion-border: 1px solid $gray-dark;
+$accordion-border: 2px solid #4F2C3B;
 
-// $accordion-title-background: $gray-light;
-// $accordion-title-background-hover: smartscale($accordion-title-background, 5%);
+$accordion-title-background: #4F2C3B;
+// $accordion-title-background-hover: smartscale($accordion-title-background, 50%);
 // $accordion-title-background-active: lighten($gray-light, 2);
 // $accordion-title-color: isitlight($accordion-title-background);
 // $accordion-title-color-active: isitlight($accordion-title-background);
@@ -299,7 +299,7 @@ $include-css: (
 // $button-style: solid;
 // $button-background: $primary-color;
 // $button-color: auto;
-// $button-radius: 0;
+$button-radius: 4px;
 // $button-sizes: (
 //   tiny: 0.7,
 //   small: 0.8,

@@ -381,8 +381,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #fff;
-  color: #222;
+  background: #fff8e8;
+  color: #244545;
   padding: 0;
   margin: 0;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -900,7 +900,7 @@ img {
   padding: 0.85em 1em;
   margin: 0 1rem 1rem 0;
   font-size: 0.9rem;
-  border-radius: 0; }
+  border-radius: 4px; }
 
 .button {
   font-size: 0.9rem;
@@ -1140,7 +1140,7 @@ img {
   margin-bottom: 1rem;
   list-style-type: none;
   display: inline-flex;
-  border-radius: 0;
+  border-radius: 4px;
   overflow: hidden; }
   .button-group > li {
     flex: 0 0 auto; }
@@ -1175,7 +1175,7 @@ img {
 
 .button-group {
   display: inline-flex;
-  border-radius: 0; }
+  border-radius: 4px; }
   .button-group > li {
     flex: 0 0 auto; }
   .button-group > li > a, .button-group > li > label {
@@ -4544,19 +4544,19 @@ meter {
   The trusy accordion allows you to create a series of vertical tabs.
 */
 .accordion {
-  border: 1px solid #cbcbcb; }
+  border: 2px solid #4F2C3B; }
 
 .accordion-title {
   padding: 1rem;
-  background: #f3f3f3;
-  color: #000;
+  background: #4F2C3B;
+  color: #fff;
   line-height: 1;
   cursor: pointer; }
   .accordion-title:hover {
-    background: #e7e7e7; }
+    background: #5b3344; }
   .is-active > .accordion-title {
-    background: #ececec;
-    color: #000; }
+    background: #563041;
+    color: #fff; }
 
 .accordion-content {
   padding: 1rem;
@@ -4740,7 +4740,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #244545;
   border-bottom: 1px dotted #ddd;
   cursor: help; }
 
@@ -5122,5 +5122,22 @@ blockquote p {
 
 p {
   margin-bottom: 0; }
+
+.menu-bar.primary {
+  background-color: #43AC6A; }
+
+.accordion {
+  border-radius: 5px; }
+
+.accordion-content {
+  background: #D9C2CC; }
+  .accordion-content p {
+    color: #4F2C3B; }
+
+.accordion-title {
+  color: #BA95A5; }
+
+.accordion-control {
+  margin-top: .6em; }
 
 /*# sourceMappingURL=app.css.map */

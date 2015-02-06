@@ -42,7 +42,7 @@ So thinking about components, my widget should look like:
 
 Accordion grid would be a wrapper for the accordions that (if I have time) should wrap accordions in such a way that they're laid out in a grid. Okay, so lets try and build this!
 
-Initial creation of above components went off without a hitch, applied foundation styles so it doesn't look fugly.
+Initial creation of above components went off without a hitch, applied foundation styles so it doesn't look fugly. Fleshing out controls next. Totally got distracted by styling the app to make it a little more Bellhopsian (that's a word, right?)
 
 
 

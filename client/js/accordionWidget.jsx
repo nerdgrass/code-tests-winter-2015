@@ -21,8 +21,13 @@ var AccordionControl = React.createClass({
     return(
       <div className="small-12 grid-content">
         <div className="success card">
-          <div className="card-section">
-            <p>Accordion Control</p>
+          <div className="card-section accordion-control grid-block">
+              <div className="grid-content medium-8">
+                <h3>Accordion Control</h3>
+              </div>
+              <div className="grid-content small-4">
+                <button className="button secondary">Add Accordion</button>
+              </div>
           </div>
         </div>
       </div>

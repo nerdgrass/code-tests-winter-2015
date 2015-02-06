@@ -4,3 +4,22 @@
 p {
   margin-bottom: 0;
 }
+.menu-bar.primary {
+  background-color: #43AC6A;
+}
+
+.accordion {
+  border-radius: 5px;
+}
+.accordion-content {
+  background:#D9C2CC;
+  p {
+    color: #4F2C3B;
+  }
+}
+.accordion-title {
+  color: #BA95A5;
+}
+.accordion-control {
+  margin-top: .6em;
+}

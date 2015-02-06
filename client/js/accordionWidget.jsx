@@ -3,12 +3,15 @@ var Accordion = require('react-foundation-apps/lib/accordion');
 
 // Widget - all components put together
 var AccordionWidget = React.createClass({
+  getInitialState: function() {
+    return {count: 4}
+  },
   render: function() {
     return (
       <div className="grid-block align-center">
         <div className="medium-8 grid-block">
           <AccordionControl  />
-          <AccordionGrid  className="small-12 grid-block" />
+          <AccordionGrid count={this.state.count} className="small-12 grid-block" />
         </div>
       </div>
     );
@@ -38,9 +41,14 @@ var AccordionControl = React.createClass({
 // Layout - how to display # of accordions
 var AccordionGrid = React.createClass({
   render: function () {
+    var count = this.props.count;
+    var accordions = [];
+    for (var i=0; i < count; i++) {
+      accordions.push(<AccordionItem />)
+    }
     return (
       <div className="small-12 grid-content">
-        <AccordionItem />
+        {accordions}
       </div>
     );
   }

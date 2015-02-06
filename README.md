@@ -29,7 +29,7 @@ Quick sanity check: does react have any easy method for generating new elements 
 
 Thought: Maybe a better way to go about this is to have a custom element that will render x accordions and starts with a baseline value of 2. Have the 'add accordion' button just increment x up and re-render the custom element. How to have components talk to each other, though? Maybe sub-components can do that, and the 'add accordion' button becomes Accordion.addButton or something? Reading more.
 
-'Read thinking in React', things become clearer. Think what I need is a prop to share data across components. Really should have read article sooner. rtfm, Alex, rtfm.
+Read 'Thinking in React', things become clearer. Think what I need is a prop to share data across components. Really should have read article sooner. rtfm, Alex, rtfm.
 
 So thinking about components, my widget should look like:
 
@@ -42,7 +42,15 @@ So thinking about components, my widget should look like:
 
 Accordion grid would be a wrapper for the accordions that (if I have time) should wrap accordions in such a way that they're laid out in a grid. Okay, so lets try and build this!
 
-Initial creation of above components went off without a hitch, applied foundation styles so it doesn't look fugly. Fleshing out controls next. Totally got distracted by styling the app to make it a little more Bellhopsian (that's a word, right?)
+Initial creation of above components went off without a hitch, applied foundation styles so it doesn't look fugly. Fleshing out controls next. Totally got distracted by styling the app to make it a little more Bellhopsian (that's a word, right?). Anyways. Looks good, now to make it dynamic-ish!
+
+First attempt is to try and use props to keep track of the number of AccordionItems. Reading up on props. Not sure props are the right way to keep track of dynamic data. Maybe state is the best way? Looks like state is the right way of doing this as props shouldn't be mutable. State should be owned by a component above all the things that use it, so that would be AccordionWidget. Set initial state to count:2 to satisfy requirement that more than one accordion show, then get AccordionGrid to render that many accordions.
+
+Having issues rendering the right amount of accordions. Right now, I have a for loop that returns the markup I need, but only once. Every other angle doesn't seem to work. Pooh. All the examples point to using .map() instead of forEach or for, but I keep getting unexpected token errors for using a period. Weird. Turns out that was because I had to wrap things in tags. wtf is it with React and needing everything to be enclosed with tags?
+
+Now JSX doesn't seem to like that I'm using a for loop. Jeez. So picky, JSX. Found solution on [Forrst](http://zurb.com/forrst/posts/Dynamically_loop_through_array_in_React_renderCo-GoL), now rendering accordions based on state.
+
+Now, to change that state on the button press.
 
 
 

@@ -1,6 +1,8 @@
+// Import libs & settings
 @import "./settings";
 @import "foundation-apps/scss/foundation";
 
+// Foundation Overrides
 p {
   margin-bottom: 0;
 }
@@ -8,6 +10,7 @@ p {
   background-color: #43AC6A;
 }
 
+// AccordionWidget styles
 .accordion {
   border-radius: 5px;
 }

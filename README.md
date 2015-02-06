@@ -1,12 +1,11 @@
 # code-tests-winter-2015
 Various code & design challenges for the job hunt in early 2015. Individual tests will be on appropriately named branches.
 
-## Code Tests
-- Bellhops
-- aboutLife
-
 ## Bellhops Code Test
 Create a small functioning application that has 2 accordion views on a single page. The accordion should be implemented as a generic reusable component. Add a button to the page that allows the user to add more accordions to the page. For extra points, include tests of your choice.
+
+#### Installation & running
+After clone, run ```NPM install``` & ```bower install``` to generate dependencies. You should just be able to run ```NPM start``` from there and load the app on ```localhost:8000```.
 
 #### Methods & Dev Log
 First thought: Find an existing accordion.
@@ -55,6 +54,8 @@ Now, to change that state on the button press. First, I'll add an onSubmit funct
 Easier said than done. My updateCount method seems to perpetually be undefined. Whoops, syntax error after half an hour of trying different things. I might be tired, probably time to call it a night soon.
 
 AHA GOT IT. After some thorough console.logging, I realized that I just needed to add the count as a prop, then update that count when handling the submit. Makes sense, in retrospect. So it works! FINAL HUZZAH!
+
+Now cleanup. Make sure it can be installed, document that, and remove any extraneous markup.
 
 
 
